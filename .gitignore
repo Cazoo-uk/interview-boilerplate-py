@@ -1,0 +1,7 @@
+# Mac
+.DS_Store
+
+# Python
+.pytest_cache
+.venv
+__pycache__
