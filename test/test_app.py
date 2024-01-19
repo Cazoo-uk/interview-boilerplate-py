@@ -1,6 +1,13 @@
 from src.app import main
 
 
-class TestApp:
-    def test_should_assert_true(self):
-        assert main() is True
+def test_should_return_input_length_ten():
+    assert len(main(10)) == 10
+
+
+def test_should_return_input_length_twenty():
+    assert len(main(20)) == 20
+
+
+def test_should_return_in_order():
+    assert main(2) == [1, 2]
