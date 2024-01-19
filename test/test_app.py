@@ -18,8 +18,12 @@ def test_should_return_cazoo_for_third_item():
 
 
 def test_should_return_cazoo_for_third_item_up_to_five():
-    assert main(5) == [1, 2, "Cazoo!", 4, 5]
+    assert main(5) == [1, 2, "Cazoo!", 4, "Yeah!"]
 
 
 def test_should_return_cazoo_for_third_item_up_to_six():
-    assert main(5) == [1, 2, "Cazoo!", 4, 5, "Cazoo!"]
+    assert main(6) == [1, 2, "Cazoo!", 4, "Yeah!", "Cazoo!"]
+
+
+def test_should_return_yeah_when_range_equals_ten():
+    assert main(10) == [1, 2, "Cazoo!", 4, "Yeah!", "Cazoo!", 7, 8, "Cazoo!", "Yeah!"]
